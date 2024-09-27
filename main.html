@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Buy & Sell</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>CampusTrade</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <div class="intro-text">
+            <h2>CampusTrade</h2>
+            
+            <p>Your one-stop shop for buying and selling books!</p>
+        </div>
+    </section>
+
+    <!-- Book Categories Section -->
+    <section class="categories">
+        <h3>Book by Categories</h3>
+        <div class="category-list">
+            <div class="category" onclick="openCategory('fiction')">
+                <img src="fiction.jfif" alt="Fiction">
+                <p>Fiction</p>
+            </div>
+            <div class="category" onclick="openCategory('nonfiction')">
+                <img src="nonf.jfif" alt="Non-Fiction">
+                <p>Non-Fiction</p>
+            </div>
+            <div class="category" onclick="openCategory('scifi')">
+                <img src="science.jfif" alt="Sci-Fi">
+                <p>Sci-Fi</p>
+            </div>
+            <div class="category" onclick="openCategory('children')">
+                <img src="fairy tail.jpeg" alt="Children">
+                <p>Children</p>
+            </div>
+            <div class="category" onclick="openCategory('history')">
+                <img src="history.jfif" alt="History">
+                <p>History</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Buy & Sell. All Rights Reserved.</p>
+            <p>Contact us: info@buyandsell.com | Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+
+    <script>
+        function openCategory(category) {
+            window.location.href = category + ".html";
+        }
+    </script>
+    
+</body>
+</html>
